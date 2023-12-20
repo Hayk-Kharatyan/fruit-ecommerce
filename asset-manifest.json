@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/fruit-ecommerce/static/css/main.7ecf66e7.css",
+    "main.js": "/fruit-ecommerce/static/js/main.15d90f92.js",
+    "static/js/787.65a1d217.chunk.js": "/fruit-ecommerce/static/js/787.65a1d217.chunk.js",
+    "static/media/hero-bg.jpg": "/fruit-ecommerce/static/media/hero-bg.b24b1c7283af6cca3fab.jpg",
+    "static/media/icomoon.svg?azfh9b": "/fruit-ecommerce/static/media/icomoon.2b94640b8557b8857f02.svg",
+    "static/media/icomoon.eot?azfh9b": "/fruit-ecommerce/static/media/icomoon.ca841d6f92438e2397b4.eot",
+    "static/media/icomoon.woff?azfh9b": "/fruit-ecommerce/static/media/icomoon.05b9a1d177008e72bb52.woff",
+    "static/media/icomoon.ttf?azfh9b": "/fruit-ecommerce/static/media/icomoon.13f662fe99f97476022e.ttf",
+    "index.html": "/fruit-ecommerce/index.html",
+    "main.7ecf66e7.css.map": "/fruit-ecommerce/static/css/main.7ecf66e7.css.map",
+    "main.15d90f92.js.map": "/fruit-ecommerce/static/js/main.15d90f92.js.map",
+    "787.65a1d217.chunk.js.map": "/fruit-ecommerce/static/js/787.65a1d217.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ecf66e7.css",
+    "static/js/main.15d90f92.js"
+  ]
+}
