@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fruit-ecommerce/static/css/main.7ecf66e7.css",
-    "main.js": "/fruit-ecommerce/static/js/main.0143fd78.js",
+    "main.js": "/fruit-ecommerce/static/js/main.e7c09b22.js",
     "static/js/787.65a1d217.chunk.js": "/fruit-ecommerce/static/js/787.65a1d217.chunk.js",
     "static/media/hero-bg.jpg": "/fruit-ecommerce/static/media/hero-bg.b24b1c7283af6cca3fab.jpg",
     "static/media/icomoon.svg?azfh9b": "/fruit-ecommerce/static/media/icomoon.2b94640b8557b8857f02.svg",
@@ -10,11 +10,11 @@
     "static/media/icomoon.ttf?azfh9b": "/fruit-ecommerce/static/media/icomoon.13f662fe99f97476022e.ttf",
     "index.html": "/fruit-ecommerce/index.html",
     "main.7ecf66e7.css.map": "/fruit-ecommerce/static/css/main.7ecf66e7.css.map",
-    "main.0143fd78.js.map": "/fruit-ecommerce/static/js/main.0143fd78.js.map",
+    "main.e7c09b22.js.map": "/fruit-ecommerce/static/js/main.e7c09b22.js.map",
     "787.65a1d217.chunk.js.map": "/fruit-ecommerce/static/js/787.65a1d217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ecf66e7.css",
-    "static/js/main.0143fd78.js"
+    "static/js/main.e7c09b22.js"
   ]
 }
