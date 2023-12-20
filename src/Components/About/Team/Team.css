@@ -1,0 +1,64 @@
+.Team{
+    margin-top: 150px;
+}
+
+.team-bg{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.flex-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team-div {
+    width: 350px;
+}
+.team-div h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;    
+}
+
+.team-div h4 span{
+    font-size: 70%;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.team-bg ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.team-bg ul li{
+    color: #fff;
+    background-color: #F28123;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.team-bg ul li:hover{
+    background-color: #051922;
+    color: #F28123;
+}
+
+@media screen and (max-width:1111px) {
+ .flex-team{
+    flex-direction: column;
+ }   
+}

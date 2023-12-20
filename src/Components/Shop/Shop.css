@@ -1,0 +1,116 @@
+.Shop-txt {
+    position: relative;
+    padding: 150px 0px;
+    z-index: 1;
+    padding-top: 200px;
+    background-color: #374b56;
+    text-align: center;
+}
+
+.Shop-txt p {
+    color: #F28123;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.Shop-txt h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.Shop-Items {
+    margin: 150px 0px;
+}
+
+.filter-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+.filter-products button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 15px;
+    border: 2px solid #051922;
+    color: #323232;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+.filter-products button:focus {
+    border: 2px solid #F28123;
+    background-color: #F28123;
+    color: #fff;
+}
+.Products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+}
+.Product {
+    width: 289px;
+    box-shadow: 0 0 20px #e4e4e4;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    text-align: center;
+    margin:15px;
+}
+.product-img {
+    padding: 30px;
+    padding-bottom: 0;
+}
+.product-img img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.Product h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px 
+}
+
+.Product h5{
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+.Product p{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-buy{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-color: #F28123;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-buy .icon-shopping-cart{
+    margin-right: 5px;
+}
+
+.btn-buy:hover{
+    background-color: #051922;
+    color: #F28123;
+}
+
+

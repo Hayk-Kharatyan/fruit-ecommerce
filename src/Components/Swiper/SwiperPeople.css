@@ -1,0 +1,54 @@
+.Peoples {
+    margin: 150px 0px;
+}
+
+
+.people {
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ cursor: move;
+}
+
+
+.avatar{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+    .avatar img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+   .people .icon-quote-right {
+        color: #b4babc;
+        margin-top: 20px;
+    font-size: 25px;
+    opacity: 0.3;
+    }
+
+    .people h3{
+        font-size: 20px;
+    font-weight: 600;
+    }
+
+    .people h4{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #051922;
+    font-weight: 600;
+    opacity: 0.5;
+    }
+
+    .txt-center{
+        text-align: center;
+        font-size: 17px;
+    font-style: italic;
+    line-height: 1.8;
+    color: #999999;
+    margin-top: 20px;
+    }

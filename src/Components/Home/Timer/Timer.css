@@ -1,0 +1,40 @@
+.Timer{
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.time{
+    position: relative;
+    display: inline-block;
+   margin-bottom: 5px;
+   margin: 0px 5px;
+    font-size: 13px;
+    line-height: 1em;
+    padding: 8px 10px 14px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid #F28123;
+}
+
+.count{
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 1.4em;
+    padding: 0px 0px;
+    color: #000000;
+    font-weight: 700;
+     letter-spacing: 1px;
+}
+
+.or{
+    color: #F28123;
+    font-size: 25px !important;
+}
+
+@media screen and (max-width:370px) {
+    .Timer{
+        transform: scale(0.8);
+    }
+}

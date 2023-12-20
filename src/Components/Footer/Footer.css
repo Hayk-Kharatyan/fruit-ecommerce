@@ -1,0 +1,164 @@
+.Footer{
+    background-color: #051922;
+    color: #fff;
+    padding: 150px 0;
+}
+
+.Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About {
+    width: 285px;
+    height: 208px;
+}
+
+.About p{
+    color: #fff;
+    opacity: 0.7;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.get-in-touch {
+    width: 285px;
+    height: 208px;
+}
+
+.get-in-touch ul li{
+    opacity: 0.7;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.pages {
+    width: 285px;
+    height: 208px;
+}
+
+.pages ul li {
+    opacity: 0.7;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: #fff;
+}
+.pages .icon-chevron-right{
+    color: #F28123;
+    padding-right: 20px;
+}
+
+.pages ul li:hover{
+    color: #F28123;
+    cursor: pointer;
+}
+
+.subscribe {
+    width: 285px;
+    height: 208px;
+}
+
+.subscribe p{
+    color: #fff;
+    opacity: 0.7;
+    line-height: 1.8;
+}
+
+.subscribe input{
+    border: none;
+    background-color: #012738;
+    width: 190px;
+    height: 22px;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.subscribe button{
+    border: none;
+    width: 51px;
+    height: 51px;
+    background-color: #012738;
+    color: #F28123;
+    padding: 14px 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe button:hover{
+    color: #051922;
+    background: #F28123;
+}
+
+.About h2,.get-in-touch h2,.pages h2,.subscribe h2{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.About h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #F28123;
+    content: "";
+}
+
+
+.get-in-touch h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #F28123;
+    content: "";
+}
+.pages h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #F28123;
+    content: "";
+}
+
+.subscribe h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #F28123;
+    content: "";
+}
+
+@media screen and (max-width:1180px) {
+
+.Info{
+    flex-direction: column;
+}
+
+.Info div{
+    margin: 15px 0px;
+}
+
+.subscribe{
+    margin: 50px 0px 0px 0px !important;
+}
+.Footer{
+    padding: 50px 0px;
+}
+    
+}

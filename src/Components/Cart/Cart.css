@@ -1,0 +1,127 @@
+.Cart-txt {
+    position: relative;
+    padding: 150px 0px;
+    z-index: 1;
+    padding-top: 200px;
+    background-color: #374b56;
+    text-align: center;
+}
+
+.Cart-txt p {
+    color: #F28123;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.Cart-txt h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.items-pay {
+    margin: 150px 0px;
+}
+.Totals-flex {
+    display: flex;
+    justify-content: center;
+}
+.total-div {
+    width: 730px;
+}
+.total-div table{
+    width: 100%;
+}
+.cart-table-head{
+    border: 1px solid #f9f9f9;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-head-row{
+    border-bottom: 1px solid #eee;
+    background-color: #efefef;
+}
+
+.table-head-row th{
+    border-right: 1px solid #efefef;
+    padding: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.price-all {
+    width: 350px;
+    margin-left: 10px;
+}
+.total-table{
+    border: 1px solid #efefef;
+    width: 100%
+}
+.table-total-row th {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 15px;
+}
+.total-table-head {
+    border-bottom: 1px solid #eee;
+}
+.table-total-row {
+    background-color: #efefef;
+}
+
+.total-div table tbody td {
+    border: 1px solid #efefef;
+    padding: 19px 15px;
+    height: 50px;
+}
+
+table.total-table tbody tr.total-data td {
+    border: 1px solid #efefef;
+    padding: 19px 15px;
+}
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name {
+    text-align: center;
+}
+.product-price {
+    text-align: center;
+}
+.product-quantity {
+    text-align: center;
+}
+.product-total {
+    text-align: center;
+}
+
+.product-remove {
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:724px) {
+    .Totals-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .total-div{
+        width: unset;
+        margin-bottom:30px ;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .Totals-flex{
+        transform: scale(0.8);
+    }
+    
+}

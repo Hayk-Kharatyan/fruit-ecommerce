@@ -1,0 +1,32 @@
+.Discount {
+    position: relative;
+    background-color: #f5f5f5;
+    background-size: cover;
+    padding: 110px 0px 115px;
+}
+
+.Discount h3 {
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+}
+
+.Discount h3 span {
+    color: #F28123;
+}
+
+.sale-percent {
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+    color: #F28123;
+}
+.sale-percent span{
+    font-size: 24px;
+    line-height: 1.1em;
+    color: #051922;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block;
+}
