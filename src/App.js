@@ -70,8 +70,8 @@ function App() {
       </div> */}
         <Nav Modal={Modal} setModal={setModal} />
         <Routes>
-          {/* <Route path="*" element={<PageNotFound Modal={Modal} />} /> */}
-          <Route path='/' element={<Home Modal={Modal} />}></Route>
+          <Route path="*" element={<PageNotFound Modal={Modal} />} />
+          <Route exact path='/' element={<Home Modal={Modal} />}></Route>
           <Route path='/about' element={<About Modal={Modal} />}></Route>
           <Route path='/news' element={<News Modal={Modal} />}></Route>
           <Route path='/contact' element={<Contact Modal={Modal} />}></Route>
