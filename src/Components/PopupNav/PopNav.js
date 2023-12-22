@@ -8,7 +8,7 @@ export default function PopNav() {
     return (
         <div className='menu-drop'>
             <ul>
-                <Link className='decor' to="/"><li>Home</li></Link>
+                <Link className='decor' to="/fruit-ecommerce"><li>Home</li></Link>
                 <Link className='decor' to="/about"><li>About</li></Link>
                 <Link className='decor' to="/shop"><li>Shop</li></Link>
                 <Link className='decor' to="/news"><li>News</li></Link>
