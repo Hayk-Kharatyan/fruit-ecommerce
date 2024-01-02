@@ -56,18 +56,13 @@ function App() {
     }
 
   }
+
+
   return (
     <Context.Provider value={
       { state: state, Counter: Counter, setcounter: setCounter, Total: Total, setTotal: setTotal, dispatch: dispatch }
     }>
       <div className="App">
-        {/* <div className='loader'>
-      <div className='loader-inner'>
-        <div className='circle'>
-
-        </div>
-      </div>
-      </div> */}
         <Nav Modal={Modal} setModal={setModal} />
         <Routes>
           <Route path="*" element={<PageNotFound Modal={Modal} />} />
@@ -79,7 +74,6 @@ function App() {
           <Route path='/cart' element={<Cart Modal={Modal} />}></Route>
         </Routes>
         <Footer />
-
         <CopyRight />
       </div>
     </Context.Provider>

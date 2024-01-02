@@ -9,10 +9,12 @@ import Discount from './Discount/Discount'
 import News from './News/News'
 import Carusel from './LogoCarusel/Carusel'
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function Home({ Modal }) {
 
     return (
         <div className='Home'>
+            <Preloader  />
             <div className='img-back'>
                 <div className='container'>
                     { Modal && <PopNav/>  }

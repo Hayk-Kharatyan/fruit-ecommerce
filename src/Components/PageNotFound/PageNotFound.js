@@ -3,10 +3,12 @@ import "./PageNotFound.css"
 import { Link } from 'react-router-dom'
 import Carusel from '../Home/LogoCarusel/Carusel'
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function PageNotFound({Modal}) {
   return (
     <div className='page-error'>
          { Modal && <PopNav/>  }
+         <Preloader/>
 
       <div className='page-txt'>
         <div className='container'>

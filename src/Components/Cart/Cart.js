@@ -3,10 +3,12 @@ import "./Cart.css"
 import Carusel from '../Home/LogoCarusel/Carusel'
 import { Context } from '../Provider/Context'
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function Cart({ Modal }) {
     let ChangeContext = useContext(Context)
     return (
         <div className='Cart'>
+            <Preloader/>
              { Modal && <PopNav/>  }
             <div className='Cart-txt'>
                 <div className='container'>

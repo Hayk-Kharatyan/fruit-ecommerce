@@ -2,10 +2,12 @@ import React from 'react'
 import "./NewsC.css"
 import { NewsComp } from '../../DataProducts/Data'
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function News({ Modal }) {
     let NewsMaped = NewsComp
     return (
         <div className='News-div'>
+            <Preloader/>
              { Modal && <PopNav/>  }
             <div className='News-txt'>
                 <div className='container'>

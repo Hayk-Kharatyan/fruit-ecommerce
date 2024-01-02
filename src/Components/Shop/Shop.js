@@ -3,12 +3,14 @@ import "./Shop.css"
 import { ProductsCart } from '../../DataProducts/Data'
 import { Context } from '../Provider/Context'
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function Shop({ Modal }) {
     let ProductsElems = ProductsCart
     let [ProductType, setProductType] = useState(ProductsElems)
     let ChangeContext = useContext(Context)
     return (
         <div className='Shop'>
+            <Preloader/>
              { Modal && <PopNav/>  }
             <div className='Shop-txt'>
                 <div className='container'>

@@ -1,9 +1,11 @@
 import React from 'react'
 import "./Contact.css"
 import PopNav from '../PopupNav/PopNav'
+import Preloader from '../Preloader/Preloader'
 export default function Contact({ Modal }) {
     return (
         <div className='Contacts'>
+            <Preloader/>
              { Modal && <PopNav/>  }
             <div className='Contact-txt'>
                 <div className='container'>
