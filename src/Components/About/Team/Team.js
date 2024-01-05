@@ -1,7 +1,15 @@
 import React from 'react'
 import { team } from '../../../DataProducts/Data'
 import "./Team.css"
+import "animate.css"
+import { useEffect } from 'react';
+import WOW from 'wowjs';
 export default function Team() {
+    useEffect(() => {
+        new WOW.WOW({
+          live: false 
+        }).init();
+      },[])
     let teamMap = team
     return (
         <div className='Team'>
@@ -14,7 +22,7 @@ export default function Team() {
                     {
                         teamMap.map((team) => {
                             return (
-                                <div key={team.id} className='team-div'>
+                                <div key={team.id} className='team-div wow animate__animated animate__fadeInDown'>
                                     <div style={{ backgroundImage: `url(${team.src})` }} className='team-bg'>
 
                                         <ul>

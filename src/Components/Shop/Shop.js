@@ -4,7 +4,15 @@ import { ProductsCart } from '../../DataProducts/Data'
 import { Context } from '../Provider/Context'
 import PopNav from '../PopupNav/PopNav'
 import Preloader from '../Preloader/Preloader'
+import "animate.css"
+import { useEffect } from 'react';
+import WOW from 'wowjs';
 export default function Shop({ Modal }) {
+    useEffect(() => {
+        new WOW.WOW({
+          live: false 
+        }).init();
+      },[])
     let ProductsElems = ProductsCart
     let [ProductType, setProductType] = useState(ProductsElems)
     let ChangeContext = useContext(Context)
@@ -14,8 +22,8 @@ export default function Shop({ Modal }) {
              { Modal && <PopNav/>  }
             <div className='Shop-txt'>
                 <div className='container'>
-                    <p>GET 24/7 SUPPORT</p>
-                    <h1>Contact us</h1>
+                    <p>FRESH AND ORGANIC</p>
+                    <h1>Shop</h1>
                 </div>
             </div>
             <div className='Shop-Items'>
@@ -41,7 +49,7 @@ export default function Shop({ Modal }) {
                         {
                             ProductType.map((product) => {
                                 return (
-                                    <div key={product.id} className='Product'>
+                                    <div key={product.id} className={`Product wow animate__animated ${product.animate}`}>
                                         <div className='product-img'>
                                             <img alt='fruit' src={product.src}></img>
                                         </div>

@@ -3,14 +3,22 @@ import "./NewsC.css"
 import { NewsComp } from '../../DataProducts/Data'
 import PopNav from '../PopupNav/PopNav'
 import Preloader from '../Preloader/Preloader'
+import "animate.css"
+import { useEffect } from 'react';
+import WOW from 'wowjs';
 export default function News({ Modal }) {
+    useEffect(() => {
+        new WOW.WOW({
+          live: false 
+        }).init();
+      },[])
     let NewsMaped = NewsComp
     return (
         <div className='News-div'>
             <Preloader/>
              { Modal && <PopNav/>  }
             <div className='News-txt'>
-                <div className='container'>
+                <div className='container wow animate__animated animate__fadeInDown'>
                     <p>ORGANIC INFORMATION</p>
                     <h1>News Article</h1>
                 </div>
@@ -22,7 +30,7 @@ export default function News({ Modal }) {
                     {
                         NewsMaped.map((news) => {
                             return (
-                                <div key={news.id} className='news-div'>
+                                <div key={news.id} className={`news-div wow animate__animated ${news.animate}`}>
                                     <div className='bg-image'><img alt='news' width="350px" height="200px" src={news.src}></img></div>
                                     <div className='news-txt'>
                                         <h3>{news.name}</h3>

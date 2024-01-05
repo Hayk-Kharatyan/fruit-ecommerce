@@ -57,7 +57,6 @@ function App() {
 
   }
 
-
   return (
     <Context.Provider value={
       { state: state, Counter: Counter, setcounter: setCounter, Total: Total, setTotal: setTotal, dispatch: dispatch }
@@ -65,13 +64,13 @@ function App() {
       <div className="App">
         <Nav Modal={Modal} setModal={setModal} />
         <Routes>
+          <Route index path='/fruit-ecommerce' element={<Home Modal={Modal} />}></Route>
+          <Route path='about' element={<About Modal={Modal} />}></Route>
+          <Route path='news' element={<News Modal={Modal} />}></Route>
+          <Route path='contact' element={<Contact Modal={Modal} />}></Route>
+          <Route path='shop' element={<Shop Modal={Modal} />}></Route>
+          <Route path='cart' element={<Cart Modal={Modal} />}></Route>
           <Route path="*" element={<PageNotFound Modal={Modal} />} />
-          <Route path='/fruit-ecommerce' element={<Home Modal={Modal} />}></Route>
-          <Route path='/about' element={<About Modal={Modal} />}></Route>
-          <Route path='/news' element={<News Modal={Modal} />}></Route>
-          <Route path='/contact' element={<Contact Modal={Modal} />}></Route>
-          <Route path='/shop' element={<Shop Modal={Modal} />}></Route>
-          <Route path='/cart' element={<Cart Modal={Modal} />}></Route>
         </Routes>
         <Footer />
         <CopyRight />

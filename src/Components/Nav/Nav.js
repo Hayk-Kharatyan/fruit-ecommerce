@@ -21,7 +21,7 @@ export default function Nav({ Modal, setModal }){
     <div className={Classname}>
 
       <div className='left'>
-       <Link className='decor' to="/"><img width="150px" height="43px" alt='logo' src='./images/logo.png'></img></Link> 
+       <Link className='decor' to="/fruit-ecommerce"><img width="150px" height="43px" alt='logo' src='./images/logo.png'></img></Link> 
       </div>
       <div className='middle'>
         <Link className='decor' to="/fruit-ecommerce"><span className='orange'>Home</span></Link>

@@ -2,13 +2,21 @@ import React from 'react'
 import "./Contact.css"
 import PopNav from '../PopupNav/PopNav'
 import Preloader from '../Preloader/Preloader'
+import "animate.css"
+import { useEffect } from 'react';
+import WOW from 'wowjs';
 export default function Contact({ Modal }) {
+    useEffect(() => {
+        new WOW.WOW({
+          live: false 
+        }).init();
+      },[])
     return (
         <div className='Contacts'>
             <Preloader/>
              { Modal && <PopNav/>  }
             <div className='Contact-txt'>
-                <div className='container'>
+                <div className='container wow animate__animated animate__fadeInDown'>
                     <p>GET 24/7 SUPPORT</p>
                     <h1>Contact us</h1>
                 </div>
@@ -16,7 +24,7 @@ export default function Contact({ Modal }) {
             <div className='container'>
                 <div className='form-flex'>
 
-                    <div className='inputs-div'>
+                    <div className='inputs-div animate__animated wow animate__fadeInLeft'>
                         <h2>Have you any question?</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
                         <div className='inputs'>
@@ -40,7 +48,7 @@ export default function Contact({ Modal }) {
 
                         </div>
                     </div>
-                    <div className='inputs-txt'>
+                    <div className='inputs-txt animate__animated wow animate__fadeInRight'>
                         <div className='i-div'>
                             <h4><span className='icon-map'></span>Shop Address</h4>
                             <p>

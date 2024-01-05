@@ -1,7 +1,14 @@
 import React from 'react'
 import "./News.css"
 import { NewsRender } from '../../../DataProducts/Data'
+import { useEffect } from 'react';
+import WOW from 'wowjs';
 export default function News() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false 
+    }).init();
+  },[])
     let NewsMap = NewsRender
   return (
     <div className='News'>
@@ -14,7 +21,7 @@ export default function News() {
         {
             NewsMap.map((news)=>{
                 return(
-                    <div key={news.id} className='news-div'>
+                    <div key={news.id} className={`news-div wow animate__animated ${news.animate} `}>
                         <div className='bg-image'><img alt='news' width="350px" height="200px" src={news.src}></img></div>
                         <div className='news-txt'>
                             <h3>{news.name}</h3>

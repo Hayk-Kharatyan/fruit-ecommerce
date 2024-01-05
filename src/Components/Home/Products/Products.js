@@ -1,8 +1,15 @@
 import React from 'react'
 import "./Products.css"
 import { ProductsRender } from '../../../DataProducts/Data'
-
+import "animate.css"
+import { useEffect } from 'react';
+import WOW from 'wowjs';
  export default function Products() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false 
+    }).init();
+  },[])
     let arr = ProductsRender    
   return (
     <div className='Products'>
@@ -15,7 +22,7 @@ import { ProductsRender } from '../../../DataProducts/Data'
             {
                 arr.map((item)=>{
                     return(
-                        <div key={item.id} className='item'>
+                        <div key={item.id} className={` item wow animate__animated ${item.animate}`}>
                             <div className='image'> 
                                 <img width="261px" height="261px" alt='fruit' src={item.src}></img>
                                 <h3 className='name'>{item.name}</h3>
